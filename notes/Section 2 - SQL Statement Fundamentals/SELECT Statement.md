@@ -1,13 +1,15 @@
 ## Syntax:
 
 ```
-SELECT <column_names> FROM <table_name>
+SELECT <column_name/s> FROM <table_name>
 ```
 
-`column_names` can be specified using the following:
+- Used to retrieve rows of all or specific columns of a table
 
-- column1 **(single)** or column1, column2, column3 and so on... **(multiple)**
-- \* (asterisk) **(all)**
+- `column_names` can be specified using the following:
+
+  - column1 **(single)** or column1, column2, column3 and so on... **(multiple)**
+  - \* (asterisk) **(all)**
 
 ## SQL Keywords:
 
