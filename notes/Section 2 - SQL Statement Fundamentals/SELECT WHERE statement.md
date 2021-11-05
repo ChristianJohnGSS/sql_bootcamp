@@ -1,9 +1,9 @@
 ## Syntax:
 
 ```
-SELECT (column_name/s)
-FROM table_name
-WHERE conditions;
+SELECT <column_name/s>
+FROM <table_name>
+WHERE <conditions>;
 ```
 
 - Allows us to specify conditions on columns for the rows to be returned
