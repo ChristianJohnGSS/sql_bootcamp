@@ -8,7 +8,7 @@ ON table_A.matched_column = table_B.matched_column
 
 ## SQL Keywords:
 
-- LEFT OUTER JOIN
+- RIGHT OUTER JOIN
 
 ## Notes:
 
