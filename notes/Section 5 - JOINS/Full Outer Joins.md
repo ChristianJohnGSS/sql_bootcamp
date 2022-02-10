@@ -1,16 +1,18 @@
 ## Syntax:
 
 ```
-N/A
+SELECT * FROM table_A
+FULL OUTER JOIN table_B
+ON table_A.matched_column = table_B.matched_column
 ```
 
 ## SQL Keywords:
 
-- OUTER JOINS
+- OUTER JOIN
 
 ## Notes:
 
-- `OUTER JOINS` allows us to specify how to deal with values only present in one of the tables being joined.
+- `OUTER JOIN` allows us to specify how to deal with values only present in one of the tables being joined.
   - FULL OUTER JOIN
     - Get everything, even if there are some rows that has no match with each table
     - Could have `NULL` values since everything is grabbed regardless if there is no match
