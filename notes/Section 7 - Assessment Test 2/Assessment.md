@@ -53,11 +53,12 @@ ON fA.facid = fB.facid WHERE fA.membercost > 0 AND fA.membercost < fb.monthlymai
 
 10. SELECT COUNT(*) FROM cd.facilities WHERE guestcost >= 10
 
-11.
+11. SELECT facid, SUM(slots) FROM cd.bookings WHERE EXTRACT(MONTH FROM starttime) = '9' AND EXTRACT(YEAR FROM starttime) = '2012' GROUP BY facid ORDER BY SUM(slots)
 
-12.
+12. SELECT facid, SUM(slots) FROM cd.bookings GROUP BY facid HAVING SUM(slots) > 1000 ORDER BY facid
 
-13.
+13. SELECT bk.starttime AS start, fc.name FROM cd.bookings AS bk INNER JOIN cd.facilities AS fc
+ON bk.facid = fc.facid WHERE fc.name LIKE '%Tennis Court%' AND DATE(bk.starttime) = '2012-09-21'
 
-14.
+14. SELECT bk.starttime, firstname || ' ' || surname AS name FROM cd.bookings AS bk INNER JOIN cd.members AS ms ON bk.memid = ms.memid WHERE firstname || ' ' || surname = 'David Farrell' 
 ```
